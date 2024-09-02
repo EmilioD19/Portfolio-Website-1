@@ -1,0 +1,8 @@
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none; /* when the media width is less than 1200px, the header is going to disappear */
+    }
+    #hamburger-nav {
+        display: flex; /* once the header disappears, the links turn into a hamburger */
+    }
+}

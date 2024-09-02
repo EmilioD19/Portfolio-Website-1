@@ -1,0 +1,94 @@
+/* GENERAL */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+* {
+    margin: 0; /* Removes the margin and padding on the side of the nav-links*/
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+html {
+    scroll-behavior: smooth; /* ensures that the scroll behvaior as a user goes down the page is smooth */
+}
+
+p {
+    color: rgb(85, 85, 85);
+}
+
+/* TRANSITION */ 
+
+a, 
+.btn { /* a class button so that when a button is clicked, there are two different styles */
+    transition: all 300ms ease;
+}
+
+/* DESKTOP NAV */
+
+nav,
+.nav-links {
+    display: flex;
+
+    
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem; /* rem is a unit of measurement in front-end */
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.logo:hover {
+    cursor: default; /* changes the cursor so that it becomes a pointer while hovering over a link and default while not.*/
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav {
+    display: none; /* is going to hide the hamburger nav menu */
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+} /* started working on mediaqueries so that we can see the hamburger menu while working with it */
+ 
