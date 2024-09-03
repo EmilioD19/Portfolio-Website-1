@@ -22,7 +22,7 @@
         </nav>
         <nav id="hamburger-nav"> <!-- Going to create a hamburger menu. (Note: onclick is the js functionality)-->
             <div class="logo">Emilio Dulay</div>
-            <div class="hamburger.menu">
+            <div class="hamburger-menu">
                 <div class="hamburger-icon" onclick="toggleMenu()">
                     <span></span> <!-- Lines of the hamburger-->
                     <span></span>
@@ -36,6 +36,35 @@
                 </div>
             </div>
         </nav>
+        <section id="profile">
+            <div class="section__pic-container">
+                <img src="./assets/profile-pic.png" alt="Emilio Dulay profile picture">
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hello I'm</p>
+                <h1 class="title">Emilio Dulay</h1>
+                <p class="section__text__p2">Frontend Developer</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick= "window.open('./assets/resume-example.pdf')">Download CV</button>
+                    <button class="btn btn-color-1" onclick= "location.href= '/#contact'">Contact Info</button>
+                </div>
+                <div id="socials-container">
+                    <img 
+                    src="./assets/linkedin.png" 
+                    alt="My LinkedIn profile" 
+                    class="icon" 
+                    onclick="location.href='https://www.linkedin.com/in/emilio-dulay-542a932a5/'"
+                    />
+                    <img 
+                    src="./assets/github.png" 
+                    alt="My Github profile"
+                    class="icon" 
+                    onclick="location.href='https://github.com/EmilioD19'"
+                    />
+                </div>
+            </div>
+        </section>
+        <section id="about"></section>
         <script src="script.js"></script> <!-- # Link the script.js file -->
     </body>
 </html>
